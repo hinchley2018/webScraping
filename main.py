@@ -7,6 +7,7 @@ def main():
     if (page.status_code == 200):
         print page.content
         soup = BeautifulSoup(page.content,'html.parser')
-        soup.find_all('p')
+        print soup.find_all('p')
+
 if __name__ == '__main__':
     main()
